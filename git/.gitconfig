@@ -1,0 +1,39 @@
+[user]
+	useConfigOnly = true
+
+[user.adevinta]
+	email = javier.alonso@adevinta.com
+	name = Javier Alonso
+	signingKey = A8EE0F3A4220B834203B36CDB1260D5FBB4C52C3
+
+[user.github]
+	email = arlekias@gmail.com
+	name = finkin
+	signingKey = D12B36BBC4FD4F57FE55E66802ED9C3EAECA52E8
+
+[push]
+	default = simple
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+	diff = diff --word-diff
+	rebaseme = !git rebase -i $(git merge-base master HEAD)
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --max-count=30
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat --max-count=10
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative --max-count=30
+    fixup = commit --fixup=HEAD
+    squash = commit --squash=HEAD
+    wip = "!f() { git commit -m \"WIP: $1\"; }; f"
+	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
+
+[pull]
+	rebase = true
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg
