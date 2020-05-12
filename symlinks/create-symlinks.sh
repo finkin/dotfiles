@@ -22,3 +22,7 @@ ln -s ~/.dotfiles/editor/vscode/snippets/ ~/Library/Application\ Support/Code/Us
 
 # Git
 ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
+
+# Vim
+rm ~/.vimrc
+ln -s ~/.dotfiles/editor/vim/.vimrc ~/.vimrc
