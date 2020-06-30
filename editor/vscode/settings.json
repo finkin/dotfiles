@@ -1,7 +1,7 @@
 {
     "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "Dracula",
     "diffEditor.ignoreTrimWhitespace": false,
     "files.exclude": {
         "**/.classpath": true,
@@ -49,5 +49,7 @@
     "editor.fontFamily": "Fira Code",
     "java.semanticHighlighting.enabled": true,
     "java.import.maven.enabled": false,
-    "terminal.integrated.shell.osx": "/bin/zsh"
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "tabnine.experimentalAutoImports": true,
+    "editor.fontLigatures": true
 }
