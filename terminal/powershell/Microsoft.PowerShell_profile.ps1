@@ -8,6 +8,22 @@ if (!(Test-Path alias:vim))
 {
     New-Alias v "C:/Program Files (x86)/Vim/vim80/./vim.exe"
 }
+if (!(Test-Path alias:msbuild14))
+{
+    New-Alias msbuild14 "C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe"
+}
+if (!(Test-Path alias:msbuild15))
+{
+    New-Alias msbuild15 "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MsBuild.exe"
+}
+if (!(Test-Path alias:msbuild16))
+{
+    New-Alias msbuild16 "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+}
+if (!(Test-Path alias:msbuild))
+{
+    New-Alias msbuild "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
+}
 
 # Functions
 
