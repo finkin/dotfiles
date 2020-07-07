@@ -6,20 +6,20 @@ if (!(Test-Path alias:l))
 }
 if (!(Test-Path alias:vim))
 {
-    New-Alias vim "C:/Program Files (x86)/Vim/vim80/./vim.exe"
+    New-Alias v "C:/Program Files (x86)/Vim/vim80/./vim.exe"
 }
 
 # Functions
 
 Function Edit-Profile
 {
-    vim $profile
+    v $profile
 }
 
 # To edit Vim settings
 Function Edit-Vimrc
 {
-    vim $HOME\_vimrc
+    v $HOME\_vimrc
 }
 
 # Colors
@@ -89,9 +89,7 @@ function global:prompt {
     $idx = $currentPath.IndexOf("::")
     if ($idx -gt -1) { $currentPath = $currentPath.Substring($idx + 2) }
 
-    Write-Host " " -NoNewLine
-    Write-Host " ?" -NoNewLine -BackgroundColor DarkGreen -ForegroundColor Yellow
-    Write-Host " $currentPath " -NoNewLine -BackgroundColor DarkGreen -ForegroundColor White
+    Write-Host " $currentPath " -NoNewLine  -ForegroundColor White
     Write-Host
     
     # Different prompt for Powershell or Powershell core
@@ -113,12 +111,6 @@ function global:prompt {
 
 
 Pop-Location
-
-Start-SshAgent -Quiet
-
-# Git Aliases
-
-. $HOME\.powershell_profile_scripts\posh-git-alias.ps1
 
 # PSReadline
 
