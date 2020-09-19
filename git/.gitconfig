@@ -39,3 +39,5 @@
 	program = /usr/local/MacGPG2/bin/gpg
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+[pager]
+	branch = false
