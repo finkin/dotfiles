@@ -26,3 +26,8 @@ ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
 # Vim
 rm ~/.vimrc
 ln -s ~/.dotfiles/editor/vim/.vimrc ~/.vimrc
+
+# .config
+rm ~/.config/gh/config.yml
+ln -s ~/.dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
+
