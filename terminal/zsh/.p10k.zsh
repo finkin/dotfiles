@@ -647,7 +647,7 @@
   typeset -g POWERLEVEL9K_TERRAFORM_DEFAULT_FOREGROUND=38
   # typeset -g POWERLEVEL9K_TERRAFORM_DEFAULT_VISUAL_IDENTIFIER_EXPANSION='⭐'
 
-  typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi'
+  typeset -g POWERLEVEL9K_AWS_SHOW_ON_COMMAND='aws|awless|terraform|pulumi|cdk'
   typeset -g POWERLEVEL9K_AWS_CLASSES=(
       '*finkin*'  FINKIN
       '*microepre*' MICROEPRE
