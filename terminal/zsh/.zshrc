@@ -27,7 +27,7 @@ source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
 alias l="colorls -lA --sd"
 
 # Pyenv
-# eval "$(pyenv init -)"
+eval "$(pyenv init -)"
 
 # export LANG=en_US.UTF-8
 
