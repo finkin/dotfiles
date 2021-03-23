@@ -42,3 +42,5 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [pager]
 	branch = false
+[interactive]
+	diffFilter = diff-so-fancy --patch
