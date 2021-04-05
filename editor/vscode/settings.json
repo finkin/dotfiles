@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 0,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "Dracula",
     "diffEditor.ignoreTrimWhitespace": false,
@@ -52,8 +51,18 @@
     "terminal.integrated.shell.osx": "/bin/zsh",
     "tabnine.experimentalAutoImports": true,
     "editor.fontLigatures": true,
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "workbench.activityBar.visible": true,
     "workbench.statusBar.visible": true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.showStartPage": false,
+    "aws.telemetry": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "liveshare.authenticationProvider": "Microsoft"
 }
