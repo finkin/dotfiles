@@ -1,2 +1,4 @@
 terminal/_exports/secret.sh
 terminal/_exports/secret.ps1
+git/.gitconfig-personal
+git/.gitconfig-professional

@@ -1,15 +1,7 @@
-[user]
-	useConfigOnly = true
-
-[user.adevinta]
-	email = javier.alonso@adevinta.com
-	name = Javier Alonso
-	signingKey = A8EE0F3A4220B834203B36CDB1260D5FBB4C52C3
-
-[user.github]
-	email = arlekias@gmail.com
-	name = finkin
-	signingKey = D12B36BBC4FD4F57FE55E66802ED9C3EAECA52E8
+[includeIf "gitdir:~/Code/"]
+	path = .gitconfig-professional
+[includeIf "gitdir:~/dev/"]
+	path = .gitconfig-personal
 
 [push]
 	default = simple

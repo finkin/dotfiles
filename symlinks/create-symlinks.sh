@@ -22,6 +22,8 @@ ln -s ~/.dotfiles/editor/vscode/snippets/ ~/Library/Application\ Support/Code/Us
 
 # Git
 ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/.gitconfig-professional  ~/.gitconfig-professional
+ln -s ~/.dotfiles/git/.gitconfig-personal  ~/.gitconfig-personal
 
 # Vim
 rm ~/.vimrc
@@ -30,4 +32,3 @@ ln -s ~/.dotfiles/editor/vim/.vimrc ~/.vimrc
 # .config
 rm ~/.config/gh/config.yml
 ln -s ~/.dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
-
