@@ -8,6 +8,8 @@ alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.
 alias java11='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home"'
 alias java12='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home"'
 alias java13='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"'
+alias typora="open -a typora"
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias aws-whoami='{ aws sts get-caller-identity & aws iam list-account-aliases; } | jq -s ".|add"'
-alias list-rds="aws rds describe-db-instances | jq -r '.DBInstances[] | { (.DBName):(.Endpoint.Address + \":\" + (.Endpoint.Port|tostring)), \"Engine\":(.Engine + \" \" + (.EngineVersion)), \"Instance Type\":(.DBInstanceClass)}'"
+alias aws-list-rds="aws rds describe-db-instances | jq -r '.DBInstances[] | { (.DBName):(.Endpoint.Address + \":\" + (.Endpoint.Port|tostring)), \"Engine\":(.Engine + \" \" + (.EngineVersion)), \"Instance Type\":(.DBInstanceClass)}'"
+alias aws-list-instances="aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,Tags[?Key==\`Name\`].Value|[0],State.Name,PrivateIpAddress]' --output text | column -t"
