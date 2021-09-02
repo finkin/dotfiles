@@ -4,7 +4,7 @@ if (!(Test-Path alias:l))
 {
     New-Alias l Get-ChildItem
 }
-if (!(Test-Path alias:vim))
+if (!(Test-Path alias:v))
 {
     New-Alias v "C:/Program Files (x86)/Vim/vim80/./vim.exe"
 }
