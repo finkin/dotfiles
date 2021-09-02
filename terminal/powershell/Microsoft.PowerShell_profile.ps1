@@ -25,9 +25,6 @@ if (!(Test-Path alias:msbuild))
     New-Alias msbuild "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\MSBuild.exe"
 }
 
-# Exports
-
-. ~\Code\dotfiles\terminal\_exports\secret.ps1
 
 # Functions
 
@@ -75,6 +72,7 @@ Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 
 Import-Module posh-git
 
+Import-Module -Name Terminal-Icons
 
 function Test-Administrator {
     $user = [Security.Principal.WindowsIdentity]::GetCurrent();
@@ -147,3 +145,8 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 # Tab completion
 Set-PSReadlineKeyHandler -Chord 'Shift+Tab' -Function Complete
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
+
+# Exports
+
+. $env:HOME/.dotfiles/terminal/_exports/secret.ps1
