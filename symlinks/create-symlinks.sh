@@ -24,6 +24,7 @@ ln -s ~/.dotfiles/editor/vscode/snippets/ ~/Library/Application\ Support/Code/Us
 ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/git/.gitconfig-professional  ~/.gitconfig-professional
 ln -s ~/.dotfiles/git/.gitconfig-personal  ~/.gitconfig-personal
+ln -s ~/.dotfiles/git/.local_gitignore  ~/.local_gitignore
 
 # Vim
 rm ~/.vimrc
