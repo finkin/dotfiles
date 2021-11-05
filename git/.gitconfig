@@ -27,7 +27,10 @@
 
 [commit]
 	gpgsign = true
-
+[diff]
+        guitool = vscode
+[difftool "vscode"]
+        cmd = code --wait --diff $LOCAL $REMOTE
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg
 [core]
