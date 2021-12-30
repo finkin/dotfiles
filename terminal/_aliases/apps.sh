@@ -14,3 +14,4 @@ alias aws-whoami='{ aws sts get-caller-identity & aws iam list-account-aliases; 
 alias aws-list-rds="aws rds describe-db-instances | jq -r '.DBInstances[] | { (.DBName):(.Endpoint.Address + \":\" + (.Endpoint.Port|tostring)), \"Engine\":(.Engine + \" \" + (.EngineVersion)), \"Instance Type\":(.DBInstanceClass)}'"
 alias aws-list-instances="aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,LaunchTime,State.Name,InstanceType,PrivateIpAddress,Tags[?Key==\`Name\`].Value|[0]]' --output text | column -t"
 alias tf="terraform"
+alias openbooks="docker run -p 8080:80 -v ~/Downloads/openbooks:/books evanbuss/openbooks --persist"
