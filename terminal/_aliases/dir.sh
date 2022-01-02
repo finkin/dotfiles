@@ -1,7 +1,7 @@
 # alias l="colorls -lA --sd"
 alias ..="cd .."
 alias ...="cd ../.."
-alias t="exa --tree --level=2 --long"
+alias t="lsd --tree --depth=2"
 
 
 # Jumps

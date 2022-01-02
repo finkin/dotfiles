@@ -24,7 +24,7 @@ source $ZSH/oh-my-zsh.sh
 source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
 
 # Aliases
-alias l="colorls -lA --sd"
+alias l="lsd -la"
 
 # Pyenv
 eval "$(pyenv init -)"
