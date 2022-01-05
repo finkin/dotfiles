@@ -1,5 +1,7 @@
 alias lzd="lazydocker"
 alias v="nvim"
+alias vim="nvim"
+alias vimdiff="nvim -d"
 alias hoplon='/usr/bin/osascript -e "tell application \"Tunnelblick\"" -e "connect \"Hoplon\"" -e "end tell"'
 alias hoplon-off='/usr/bin/osascript -e "tell application \"Tunnelblick.app\"" -e "disconnect \"Hoplon\"" -e "end tell"'
 alias heimdall='/usr/bin/osascript -e "tell application \"Tunnelblick\"" -e "connect \"Heimdall\"" -e "end tell"'
