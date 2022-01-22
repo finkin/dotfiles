@@ -35,6 +35,7 @@
     dotnet_version          # .NET version (https://dotnet.microsoft.com)
     java_version            # java version (https://www.java.com/)
     terraform               # terraform workspace (https://www.terraform.io)
+    terraform_version       # terraform version
     aws
     kubecontext
     # =========================[ Line #2 ]=========================
