@@ -40,3 +40,6 @@ eval "$(pyenv init -)"
 
 # asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+# Created by `pipx` on 2021-12-28 12:51:46
+export PATH="$PATH:/Users/javieralonso/.local/bin"
