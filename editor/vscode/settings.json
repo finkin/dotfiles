@@ -58,11 +58,17 @@
     "kite.showWelcomeNotificationOnStartup": false,
     "python.showStartPage": false,
     "aws.telemetry": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "liveshare.authenticationProvider": "Microsoft"
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "liveshare.authenticationProvider": "Microsoft",
+    "redhat.telemetry.enabled": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "yaml.schemas": {},
+    "json.schemas": [],
+    "python.insidersChannel": "daily",
+    "pylance.insidersChannel": "daily"
 }
