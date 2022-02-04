@@ -17,3 +17,4 @@ alias aws-list-rds="aws rds describe-db-instances | jq -r '.DBInstances[] | { (.
 alias aws-list-instances="aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,LaunchTime,State.Name,InstanceType,PrivateIpAddress,Tags[?Key==\`Name\`].Value|[0]]' --output text | column -t"
 alias tf="terraform"
 alias openbooks="docker run -p 8080:80 -v ~/Downloads/openbooks:/books evanbuss/openbooks --persist"
+alias gcane='git commit --amend --no-edit'
