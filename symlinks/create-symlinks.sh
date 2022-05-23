@@ -26,10 +26,6 @@ ln -s ~/.dotfiles/git/.gitconfig-professional  ~/.gitconfig-professional
 ln -s ~/.dotfiles/git/.gitconfig-personal  ~/.gitconfig-personal
 ln -s ~/.dotfiles/git/.local_gitignore  ~/.local_gitignore
 
-# Vim
-rm ~/.vimrc
-ln -s ~/.dotfiles/editor/vim/.vimrc ~/.vimrc
-
 # .config
 rm ~/.config/gh/config.yml
 ln -s ~/.dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
