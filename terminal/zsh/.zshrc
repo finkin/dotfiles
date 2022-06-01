@@ -45,3 +45,6 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 
 # Created by `pipx` on 2021-12-28 12:51:46
 export PATH="$PATH:/Users/javieralonso/.local/bin"
+
+# z
+. /usr/local/etc/profile.d/z.sh
