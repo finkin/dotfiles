@@ -27,6 +27,7 @@ paths=(
   "/Library/Frameworks/Mono.framework/Versions/Current/Commands"
   "/bin"
   "/usr/local/bin" # This contains Brew ZSH. If it's below `/bin` it won't be executed.
+  "/opt/homebrew/bin"  # Homebrew location on Apple Silicon
   "/usr/local/opt/make/libexec/gnubin"
   "/usr/bin"
   "/usr/local/sbin"
