@@ -26,6 +26,9 @@ ln -s ~/.dotfiles/git/.gitconfig-professional  ~/.gitconfig-professional
 ln -s ~/.dotfiles/git/.gitconfig-personal  ~/.gitconfig-personal
 ln -s ~/.dotfiles/git/.local_gitignore  ~/.local_gitignore
 
+# p10K
+ln -s ~/.dotfiles/terminal/zsh/.p10k.zsh  ~/.p10k.zsh
+
 # .config
 rm ~/.config/gh/config.yml
 ln -s ~/.dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
