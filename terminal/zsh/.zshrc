@@ -50,3 +50,6 @@ export PATH="$PATH:/Users/javieralonso/.local/bin"
 # z
 [[ ! -f ~/usr/local/etc/profile.d/z.sh ]] || . /usr/local/etc/profile.d/z.sh
 [[ ! -f ~/opt/homebrew/etc/profile.d/z.sh ]] || . /opt/homebrew/etc/profile.d/z.sh
+
+# Created by `pipx` on 2022-06-03 10:39:06
+export PATH="$PATH:/Users/javier.alonso/.local/bin"
