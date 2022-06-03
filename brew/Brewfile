@@ -1,6 +1,7 @@
 tap 'homebrew/cask-fonts'
 tap 'iann0036/iamlive'
 brew 'asdf'
+brew 'awscli'
 brew 'benthos'
 brew 'diff-so-fancy'
 brew 'fd'
