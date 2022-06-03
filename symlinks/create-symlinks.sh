@@ -32,3 +32,6 @@ ln -s ~/.dotfiles/terminal/zsh/.p10k.zsh  ~/.p10k.zsh
 # .config
 rm ~/.config/gh/config.yml
 ln -s ~/.dotfiles/.config/gh/config.yml ~/.config/gh/config.yml
+
+## minor things
+touch ~/hushlogin
