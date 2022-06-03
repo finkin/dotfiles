@@ -8,7 +8,7 @@ export HOMEBREW_NO_ANALYTICS=true
 
 export ZSH=$HOME/.oh-my-zsh
 
-export GPG_TTY=$(tty)
+export GPG_TTY=$TTY
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 
