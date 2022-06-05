@@ -6,10 +6,9 @@ alias hoplon='/usr/bin/osascript -e "tell application \"Tunnelblick\"" -e "conne
 alias hoplon-off='/usr/bin/osascript -e "tell application \"Tunnelblick.app\"" -e "disconnect \"Hoplon\"" -e "end tell"'
 alias heimdall='/usr/bin/osascript -e "tell application \"Tunnelblick\"" -e "connect \"Heimdall\"" -e "end tell"'
 alias heimdall-off='/usr/bin/osascript -e "tell application \"Tunnelblick.app\"" -e "disconnect \"Heimdall\"" -e "end tell"'
-alias java8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"'
-alias java11='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home"'
-alias java12='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home"'
-alias java13='export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"'
+alias java8='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version'
+alias java11='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version'
+alias java18='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 18`; java -version'
 alias typora="open -a typora"
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias aws-whoami='{ aws sts get-caller-identity & aws iam list-account-aliases; } | jq -s ".|add"'
