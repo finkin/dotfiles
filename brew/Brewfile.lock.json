@@ -1459,6 +1459,45 @@
             }
           }
         }
+      },
+      "docker": {
+        "version": "20.10.16",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:3e2549cc84e09e7faafb11025bd732cdba63149a97432cb5da6fd4bb2f365dd2",
+              "sha256": "3e2549cc84e09e7faafb11025bd732cdba63149a97432cb5da6fd4bb2f365dd2"
+            },
+            "arm64_big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:2369b3c69866e93196b343cf623c5c1ea66338b91f6348386a345d4ef432aa49",
+              "sha256": "2369b3c69866e93196b343cf623c5c1ea66338b91f6348386a345d4ef432aa49"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:a74f1ea366019a6b92f4130d487ba6e180cdecc8d28c294c796f8c11b5869df5",
+              "sha256": "a74f1ea366019a6b92f4130d487ba6e180cdecc8d28c294c796f8c11b5869df5"
+            },
+            "big_sur": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:89e2bbca9ea87ab0f66b40101c4bf1f0e055aed2867ee73fa2a65974cfc7b069",
+              "sha256": "89e2bbca9ea87ab0f66b40101c4bf1f0e055aed2867ee73fa2a65974cfc7b069"
+            },
+            "catalina": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:b5c8e6b1c69441e0a225f3ab1f92b1c4ddc3f0612b364d052f9019fb84839c53",
+              "sha256": "b5c8e6b1c69441e0a225f3ab1f92b1c4ddc3f0612b364d052f9019fb84839c53"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/docker/blobs/sha256:e7124e15cd9f187e561bef9fe42edcf21f149f37fc77524f177b4b3c40037aea",
+              "sha256": "e7124e15cd9f187e561bef9fe42edcf21f149f37fc77524f177b4b3c40037aea"
+            }
+          }
+        }
       }
     },
     "cask": {
