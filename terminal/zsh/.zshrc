@@ -41,15 +41,13 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # asdf
-[[ ! -f /usr/local/opt/asdf/libexec/asdf.sh ]] || . /usr/local/opt/asdf/libexec/asdf.sh
-[[ ! -f /opt/homebrew/asdf/libexec/asdf/sh ]] || . /opt/homebrew/asdf/libexec/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # Created by `pipx` on 2021-12-28 12:51:46
 export PATH="$PATH:/Users/javieralonso/.local/bin"
 
 # z
-[[ ! -f ~/usr/local/etc/profile.d/z.sh ]] || . /usr/local/etc/profile.d/z.sh
-[[ ! -f ~/opt/homebrew/etc/profile.d/z.sh ]] || . /opt/homebrew/etc/profile.d/z.sh
+. $(brew --prefix z)/etc/profile.d/z.sh
 
 # Created by `pipx` on 2022-06-03 10:39:06
 export PATH="$PATH:/Users/javier.alonso/.local/bin"
