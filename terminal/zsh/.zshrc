@@ -18,7 +18,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git python zsh-syntax-highlighting zsh-autosuggestions history-substring-search)
+plugins=(git python zsh-syntax-highlighting zsh-autosuggestions history-substring-search colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
