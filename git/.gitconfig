@@ -35,6 +35,7 @@
 	program = /opt/homebrew/bin/gpg
 [core]
 	pager = delta
+	editor = "nvim"
 	excludesfile = ~/.local_gitignore
 [pager]
 	branch = false
