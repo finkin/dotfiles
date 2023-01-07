@@ -6,16 +6,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export DOTFILES_PATH=$HOME/.dotfiles
+# Exports
+# shellcheck source=/dev/null
+for exports in "$DOTFILES_PATH/terminal/_exports/"*; do source "$exports"; done
 
+# Options
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FCNTL_LOCK
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
-
-source $DOTFILES_PATH/terminal/init.sh
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(git python zsh-syntax-highlighting zsh-autosuggestions history-substring-search colored-man-pages)
@@ -23,8 +23,10 @@ plugins=(git python zsh-syntax-highlighting zsh-autosuggestions history-substrin
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
 
-# Aliases
-alias l="lsd -la"
+# Aliases (after oh-my-zsh because it contains a lot aliases)
+alias sudo='sudo '
+# shellcheck source=/dev/null
+for aliasToSource in "$DOTFILES_PATH/terminal/_aliases/"*; do source "$aliasToSource"; done
 
 # Pyenv
 eval "$(pyenv init -)"
