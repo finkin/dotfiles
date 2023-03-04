@@ -5,6 +5,7 @@ export FZF_DEFAULT_OPTS='
 
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ANALYTICS=true
+export HOMEBREW_NO_ENV_HINTS=true
 
 export ZSH=$HOME/.oh-my-zsh
 
