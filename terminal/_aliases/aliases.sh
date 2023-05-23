@@ -23,6 +23,7 @@ alias heimdall='/usr/bin/osascript -e "tell application \"Tunnelblick\"" -e "con
 alias heimdall-off='/usr/bin/osascript -e "tell application \"Tunnelblick.app\"" -e "disconnect \"Heimdall\"" -e "end tell"'
 alias java8='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version'
 alias java11='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version'
+alias java17='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 17`; java -version'
 alias java18='unset JAVA_HOME; export JAVA_HOME=`/usr/libexec/java_home -v 18`; java -version'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias aws-whoami='{ aws sts get-caller-identity & aws iam list-account-aliases; } | jq -s ".|add"'
