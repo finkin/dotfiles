@@ -1,4 +1,4 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Enable Powerlevel11k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -43,7 +43,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
+PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # Created by `pipx` on 2021-12-28 12:51:46
 export PATH="$PATH:/Users/javieralonso/.local/bin"
@@ -53,3 +53,10 @@ export PATH="$PATH:/Users/javieralonso/.local/bin"
 
 # Created by `pipx` on 2022-06-03 10:39:06
 export PATH="$PATH:/Users/javier.alonso/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# FUNCTIONS
+source $DOTFILES_PATH/terminal/zsh/functions.sh
