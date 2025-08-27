@@ -29,6 +29,7 @@ paths=(
   "/bin"
   "/usr/local/bin" # This contains Brew ZSH. If it's below `/bin` it won't be executed.
   "/opt/homebrew/bin"  # Homebrew location on Apple Silicon
+  "/opt/homebrew/sbin"  # Homebrew location on Apple Silicon
   "/usr/local/opt/make/libexec/gnubin"
   "/usr/bin"
   "/usr/local/sbin"
