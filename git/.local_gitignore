@@ -1,3 +1,5 @@
 .DS_Store
 .vscode
 .tool-versions
+**/.claude/settings.local.json
+todo.md
