@@ -13,6 +13,10 @@ export GPG_TTY=$TTY
 export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+
+
 paths=(
   "$HOME/bin"
   "$DOTFILES_PATH/bin"
@@ -21,8 +25,12 @@ paths=(
   "$HOME/.dotnet/tools"
   "$HOME/.vimpkg/bin"
   "$HOME/.cargo/bin"
+  "$HOME/go/bin"
+  "$HOME/.docker/bin"
   "$HOME/.jenv/bin"
   "$HOME/.pyenv/shims"
+  "$ANDROID_HOME/platform-tools"
+  "$ANDROID_HOME/cmdline-tools/latest/bin"
   "/usr/local/MacGPG2/bin"
   "/usr/local/share/dotnet"
   "/Library/Frameworks/Mono.framework/Versions/Current/Commands"

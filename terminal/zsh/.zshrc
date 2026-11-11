@@ -18,7 +18,7 @@ ZSH_HIGHLIGHT_MAXLENGTH=300
 ZSH_THEME="powerlevel10k/powerlevel10k"
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions history-substring-search colored-man-pages)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
@@ -27,6 +27,11 @@ source $DOTFILES_PATH/terminal/zsh/key-bindings.zsh
 alias sudo='sudo '
 # shellcheck source=/dev/null
 for aliasToSource in "$DOTFILES_PATH/terminal/_aliases/"*; do source "$aliasToSource"; done
+
+# For auto-completion to go word by word instead of the default
+# forward-char that goes to the end of the suggestion because there
+# are no more actual chars typed
+bindkey '^F' forward-word
 
 # Pyenv
 eval "$(pyenv init -)"
@@ -58,5 +63,41 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+autoload -U add-zsh-hook
+
+load-nvmrc() {
+  local nvmrc_path
+  nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version
+    nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$(nvm version)" ]; then
+      nvm use
+    fi
+  elif [ -n "$(PWD=$OLDPWD nvm_find_nvmrc)" ] && [ "$(nvm version)" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
 # FUNCTIONS
 source $DOTFILES_PATH/terminal/zsh/functions.sh
+eval "$(atuin init zsh)"
+
+# bun completions
+[ -s "/Users/javier.alonso/.bun/_bun" ] && source "/Users/javier.alonso/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+### SCLOUD - shell integration
+command -v scloud >/dev/null 2>&1 && eval "$(scloud --shell zsh)"
+### SCLOUD

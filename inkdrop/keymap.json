@@ -1,8 +1,0 @@
-{
-    ".CodeMirror textarea": {
-        "cmd-shift-.": "core:note-list-show-all-notes"
-    },
-    "body": {
-        "cmd-shift-.": "core:note-list-show-all-notes"
-    }
-}
