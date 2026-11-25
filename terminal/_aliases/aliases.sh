@@ -12,6 +12,7 @@ alias dotfiles='cd ~/.dotfiles'
 # Apps
 alias calude="claude"
 alias codex-personal='CODEX_HOME=~/.codex-personal codex'
+alias wakepc='wakeonlan 24:4B:FE:78:AC:86'
 alias v="nvim"
 alias vim="nvim"
 alias vimdiff="nvim -d"
